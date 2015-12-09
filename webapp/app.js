@@ -7,8 +7,8 @@ app.use(express.static('public'));
 
 var database = mysql.createConnection({
   host     : 'localhost',
-  user     : 'root',
-  port     : '3307',
+  user     : '',
+  port     : '',
   password : '',
   database : 'hockey'
 });
@@ -16,7 +16,6 @@ var database = mysql.createConnection({
 
 app.post('/listGames', function(req, res){
   database.query("select name, year from games order by year", function(err, rows, fields){
-    console.log(rows);
     res.send(rows);
   });
 });
