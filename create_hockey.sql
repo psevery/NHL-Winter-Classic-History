@@ -44,7 +44,7 @@ create table goalies
 	team varchar(20),
 	year int,
 	jnumber int,
-	savepercent int,
+	savepercent Float(4,4),
 	primary key (jnumber, team, year),
 	foreign key (team, year) references teams (mascot, year)
 );
@@ -73,8 +73,8 @@ create table goals
 	first varchar(20),
 	last varchar(20),
 	team varchar(20),
-	jnumber int,
 	year int,
+	jnumber int,
 	primary key (period, time),
 	foreign key (team, year) references teams (mascot, year),
 	foreign key (jnumber, team, year) references players (jnumber, team, year)
@@ -82,14 +82,14 @@ create table goals
 create table penalties 
 (
 	period int,
-	type varchar(20),
-	time int,
+	time time,
+	infraction varchar(20),
 	first varchar(20),
 	last varchar(20),
 	team varchar(20),
-	jnumber int,
 	year int,
-	primary key (jnumber, period, time),
+	jnumber int,
+	primary key (team, jnumber, period, time),
 	foreign key (team, year) references teams (mascot, year)
 );
 
