@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	 <script src="javascripts/canvas.js"></script>
 	 <script src="javascripts/controller.js"></script>
+	 <script src="javascripts/display.js"></script>
 </head>
 <body >
 	<h1>History of Outdoor NHL Games</h1> 
-	<select id="game"><option>select game</option></select>
+	<select id="game" onchange="getSelectedGame()"><option>select game</option></select>
 	<canvas id="rink" width="800" height="500"></canvas>
+	<table id='table' ></table>
 </body>
 </html>

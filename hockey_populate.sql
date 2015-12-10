@@ -1,6 +1,3 @@
-
-insert into teams values ('Montreal', 'Canadians', '2003');
-insert into teams values ('Edmonton', 'Oilers', '2003');
 insert into teams values ('Buffalo', 'Sabres', '2008');
 insert into teams values ('Pittsburgh', 'Penguins', '2008');
 insert into teams values ('Chicago', 'Blackhawks', '2009');
@@ -16,7 +13,6 @@ insert into teams values ('Toronto', 'Maple Leafs', '2014');
 insert into teams values ('Washington', 'Capitals', '2015');
 insert into teams values ('Chicago', 'Blackhawks', '2015');
 
-insert into games values('2003','Winter Classic','Canadians','Oilers','4','3');
 insert into games values('2008','Winter Classic','Sabres','Penguins','1','2');
 insert into games values('2009','Winter Classic','Blackhawks','Red Wings','4','6');
 insert into games values('2010','Winter Classic','Bruins','Flyers','2','1');
